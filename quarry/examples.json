@@ -1,0 +1,158 @@
+{
+ "formula_1": [
+  {
+   "question": "Where is Malaysian Grand Prix held? Give the location coordinates.",
+   "evidence": "location coordinates refers to (lat, lng); Malaysian Grand Prix refers to races.name = 'Malaysian Grand Prix'",
+   "difficulty": "simple",
+   "question_id": 868
+  },
+  {
+   "question": "How many circuits are there in Adelaide, Australia?",
+   "evidence": "Australia is the country; Melbourne is the location of circuit;",
+   "difficulty": "simple",
+   "question_id": 945
+  },
+  {
+   "question": "What was Lewis Hamilton's final rank in the 2008 Chinese Grand Prix?",
+   "evidence": "Lewis Hamilton refers to the full name of the driver; Full name of the driver refers to drivers.forename and drivers.surname; final rank refers to positionOrder; Chinese Grand Prix refers to races.name = 'Chinese Grand Prix';",
+   "difficulty": "moderate",
+   "question_id": 933
+  },
+  {
+   "question": "For all the drivers who finished the game in race No. 872, who is the youngest?",
+   "evidence": "race number refers to raceId; drivers who finished the race refers to time has value; the youngest is a driver where MAX(dob);",
+   "difficulty": "moderate",
+   "question_id": 877
+  }
+ ],
+ "california_schools": [
+  {
+   "question": "Which state special schools have the highest number of enrollees from grades 1 through 12?",
+   "evidence": "State Special Schools refers to DOC = 31; Grades 1 through 12 means K-12",
+   "difficulty": "simple",
+   "question_id": 46
+  },
+  {
+   "question": "List the names of virtual schools that are among the top 5 in their respective counties based on average reading scores.",
+   "evidence": "Exclusively virtual refers to Virtual = 'F'; respective counties means PARTITION BY County",
+   "difficulty": "simple",
+   "question_id": 41
+  },
+  {
+   "question": "What is the telephone number for the school with the lowest average score in reading in Fresno Unified?",
+   "evidence": "Fresno Unified is a name of district;",
+   "difficulty": "moderate",
+   "question_id": 40
+  },
+  {
+   "question": "What is the complete address of the school with the lowest excellence rate? Indicate the Street, City, Zip and State.",
+   "evidence": "Execellence Rate = NumGE1500 / NumTstTakr; complete address has Street, City, State, Zip code",
+   "difficulty": "moderate",
+   "question_id": 37
+  }
+ ],
+ "thrombosis_prediction": [
+  {
+   "question": "How many female patients were given an APS diagnosis?",
+   "evidence": "female refers to SEX = 'F'; APS diagnosis refers to Diagnosis='APS'",
+   "difficulty": "simple",
+   "question_id": 1198
+  },
+  {
+   "question": "What is the disease patient '30609' diagnosed with. List all the date of laboratory tests done for this patient.",
+   "evidence": "'30609' is the Patient ID; disease means Diagnosis",
+   "difficulty": "simple",
+   "question_id": 1153
+  },
+  {
+   "question": "For the patients with an abnormal Ig M level, what is the most common disease they are diagnosed with?",
+   "evidence": "abnormal Ig M level refers to IGM <=40 OR IGM >= 400; most common disease refers to MAX(COUNT(Diagnosis));",
+   "difficulty": "moderate",
+   "question_id": 1255
+  },
+  {
+   "question": "List and group all patients by sex for total bilirubin (T-BIL) level not within the normal range.",
+   "evidence": "List refers to GROUP_CONCAT(DISTINCT ID); total bilirubin (T-BIL) not within normal range refers to T-BIL > = 2.0",
+   "difficulty": "moderate",
+   "question_id": 1225
+  }
+ ],
+ "toxicology": [
+  {
+   "question": "Find the triple-bonded molecules which are carcinogenic.",
+   "evidence": "triple-bonded molecules refers to bond_type = '#'; carcinogenic refers to label = '+'",
+   "difficulty": "simple",
+   "question_id": 200
+  },
+  {
+   "question": "What is the most common bond type?",
+   "evidence": "most common bond type refers MAX(COUNT(bond_type))",
+   "difficulty": "simple",
+   "question_id": 195
+  },
+  {
+   "question": "What proportion of single bonds are carcinogenic? Please provide your answer as a percentage with five decimal places.",
+   "evidence": "single bond refers to bond_type = '-'; label = '+' mean molecules are carcinogenic; proportion = DIVIDE(SUM(label = '+') * 100, COUNT(bond_id)) where bond_type = '-'",
+   "difficulty": "moderate",
+   "question_id": 255
+  },
+  {
+   "question": "Among all the atoms from 21 to 25, list all the molecules that are carcinogenic.",
+   "evidence": "atoms from 21 to 25 refers to SUBSTR(atom_id, 7, 2) between '21' and '25'; label = '+' mean molecules are carcinogenic",
+   "difficulty": "moderate",
+   "question_id": 242
+  }
+ ],
+ "student_club": [
+  {
+   "question": "Mention the total expense used on 8/20/2019.",
+   "evidence": "total expense refers SUM(cost) where expense_date = '2019-08-20'",
+   "difficulty": "simple",
+   "question_id": 1409
+  },
+  {
+   "question": "State the category of events were held at MU 215.",
+   "evidence": "'MU 215' is the location of event; ",
+   "difficulty": "simple",
+   "question_id": 1422
+  },
+  {
+   "question": "Identify the type of expenses and their total value approved for 'October Meeting' event.",
+   "evidence": "total value refers to SUM(cost); 'October Meeting' is an event name;",
+   "difficulty": "moderate",
+   "question_id": 1404
+  },
+  {
+   "question": "Did Maya Mclean attend the 'Women's Soccer' event?",
+   "evidence": "Maya Mclean is the full name; full name refers to first_name, last_name; 'Women's Soccer' is an event_name",
+   "difficulty": "moderate",
+   "question_id": 1399
+  }
+ ],
+ "superhero": [
+  {
+   "question": "Describe the names of neutral alignment superheroes.",
+   "evidence": "names of superheroes refers to superhero_name; neutral alignment refers to alignment = 'Neutral';",
+   "difficulty": "simple",
+   "question_id": 785
+  },
+  {
+   "question": "Which superheroes have a durability attribute value of less than 50?",
+   "evidence": "durability of less than 50 refers to attribute_name = 'Durability' AND attribute_value < 50",
+   "difficulty": "simple",
+   "question_id": 738
+  },
+  {
+   "question": "What are the names of the superheroes with the power of death touch?",
+   "evidence": "name of superheroes refers to refers to superhero_name; the power of death touch refers to power_name = 'Death Touch'",
+   "difficulty": "moderate",
+   "question_id": 739
+  },
+  {
+   "question": "Calculate the percentage of superheroes with blue eyes.",
+   "evidence": "percentage = MULTIPLY(DIVIDE(SUM(superhero_name WHERE color = 'Blue'), COUNT(superhero_name)), 100.0); blue eyes refers to color = 'Blue' and color.id =  eye_colour_id = 7;",
+   "difficulty": "moderate",
+   "question_id": 800
+  }
+ ]
+}
