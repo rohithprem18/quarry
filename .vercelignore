@@ -1,0 +1,15 @@
+.venv
+tests
+bench
+docs
+web/node_modules
+.github
+**/__pycache__
+.pytest_cache
+.ruff_cache
+data/raw
+data/dbs/card_games
+data/dbs/codebase_community
+data/dbs/debit_card_specializing
+data/dbs/european_football_2
+data/dbs/financial
