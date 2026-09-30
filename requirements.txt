@@ -1,0 +1,4 @@
+# Runtime dependencies (Vercel reads pyproject.toml; this file is for plain pip installs)
+fastapi==0.115.6
+httpx==0.28.1
+sqlglot==26.6.0
