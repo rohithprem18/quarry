@@ -1,0 +1,82 @@
+{
+  "benchmark": "BIRD Mini-Dev (SQLite), stratified sample",
+  "metric": "execution accuracy (EX): predicted result set == gold result set",
+  "n": 150,
+  "overall": {
+    "first_attempt": 0.5267,
+    "final": 0.5333
+  },
+  "by_difficulty": {
+    "simple": {
+      "n": 44,
+      "first_attempt": 0.6591,
+      "final": 0.6591
+    },
+    "moderate": {
+      "n": 75,
+      "first_attempt": 0.4933,
+      "final": 0.5067
+    },
+    "challenging": {
+      "n": 31,
+      "first_attempt": 0.4194,
+      "final": 0.4194
+    }
+  },
+  "by_database": {
+    "california_schools": {
+      "n": 12,
+      "final": 0.3333
+    },
+    "card_games": {
+      "n": 16,
+      "final": 0.375
+    },
+    "codebase_community": {
+      "n": 14,
+      "final": 0.4286
+    },
+    "debit_card_specializing": {
+      "n": 6,
+      "final": 0.5
+    },
+    "european_football_2": {
+      "n": 17,
+      "final": 0.4118
+    },
+    "financial": {
+      "n": 10,
+      "final": 0.6
+    },
+    "formula_1": {
+      "n": 21,
+      "final": 0.4762
+    },
+    "student_club": {
+      "n": 16,
+      "final": 0.75
+    },
+    "superhero": {
+      "n": 11,
+      "final": 1.0
+    },
+    "thrombosis_prediction": {
+      "n": 16,
+      "final": 0.625
+    },
+    "toxicology": {
+      "n": 11,
+      "final": 0.4545
+    }
+  },
+  "schema_linking_table_recall": 0.9467,
+  "repaired": 1,
+  "broken_by_repair": 0,
+  "avg_attempts": 1.08,
+  "median_seconds": 1.4,
+  "providers": {
+    "groq": 132,
+    "openrouter": 18,
+    "gemini": 12
+  }
+}
