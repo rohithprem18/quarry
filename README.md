@@ -123,6 +123,31 @@ quarry/
 
 BIRD databases and questions are © their authors, released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); they are downloaded at setup time and not stored in this repository.
 
+## Contributing
+
+Contributions of every size are welcome, from fixing a typo to building a feature, and no experience is required. Issues labelled [**good first issue**](https://github.com/rohithprem18/quarry/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) are picked to be a friendly start.
+
+<p>
+  <a href="https://github.com/rohithprem18/quarry/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/rohithprem18/quarry/ci.yml?style=flat-square&label=CI" alt="CI status"></a>
+  <a href="https://github.com/rohithprem18/.github/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square" alt="PRs welcome"></a>
+  <a href="https://github.com/rohithprem18/quarry/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"><img src="https://img.shields.io/github/issues/rohithprem18/quarry/good%20first%20issue?style=flat-square&label=good%20first%20issues&color=7057ff" alt="Good first issues"></a>
+  <a href="#contributors"><img src="https://img.shields.io/github/contributors/rohithprem18/quarry?style=flat-square&color=orange" alt="Contributors"></a>
+</p>
+
+1. **Pick an issue** (or open one with your idea) and comment that you're working on it.
+2. **Fork** the repository and create a branch: `git checkout -b fix/short-description`.
+3. **Make your change** and run the same checks as CI (see [`.github/workflows/ci.yml`](.github/workflows/ci.yml)).
+4. **Open a pull request.** When every check passes, it is **merged automatically** and you appear under [Contributors](#contributors).
+
+Changes to workflows, dependencies or deployment config wait for a maintainer review. See the [contributing guide](https://github.com/rohithprem18/.github/blob/main/CONTRIBUTING.md) and the [Code of Conduct](https://github.com/rohithprem18/.github/blob/main/CODE_OF_CONDUCT.md).
+
+## Contributors
+
+Thanks to everyone who has helped build this project!
+
+<!-- CONTRIBUTORS:START -->
+<!-- CONTRIBUTORS:END -->
+
 ## License
 
 MIT
